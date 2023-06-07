@@ -1,0 +1,37 @@
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  .image-container {
+    border-radius: 12px;
+    overflow: hidden;
+
+    &.rounded {
+      border-radius: 50%;
+    }
+
+    &.default-width {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & span {
+    max-width: 10em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+
+    @media screen and (min-width: 750px) {
+      display: block;
+    }
+  }
+}

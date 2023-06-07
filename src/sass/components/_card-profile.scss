@@ -1,0 +1,30 @@
+@use "../utilities/_variables.scss" as var;
+
+.card-profile {
+  background-color: var.$primary-color;
+  color: white;
+  margin: 1em;
+  padding: 1em 2em;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width: 40em;
+
+  .u-list {
+    margin-top: 1em;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin: 0.5em auto;
+
+      p {
+        width: 100%;
+        font-size: 0.8em;
+        overflow-y: auto;
+        max-height: 10em;
+      }
+    }
+  }
+}

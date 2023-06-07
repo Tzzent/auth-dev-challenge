@@ -1,0 +1,26 @@
+@use "../utilities/_variables.scss" as var;
+
+.head-container {
+  margin-bottom: 15px;
+}
+
+.title {
+  color: var.$primary-color;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var.$secondary-color;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}

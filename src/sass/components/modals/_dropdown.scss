@@ -1,0 +1,53 @@
+@use "../../utilities/_variables.scss" as var;
+
+.modal-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var.$white-color;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid rgb(157, 157, 157, 0.5);
+  border-radius: 12px;
+  padding: 0.5em 1em;
+  z-index: 10;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    list-style: none;
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      padding: 0.8em 1em;
+      border-radius: 12px;
+
+      p {
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: rgb(183, 183, 183, 0.3);
+      }
+
+      &.last-item {
+        margin-top: 5px;
+        color: var.$btn-exit-color;
+      }
+    }
+
+    hr {
+      border-top: 0.01px solid rgb(157, 157, 157, 0.5);
+    }
+  }
+}
+
+.is-open {
+  display: block;
+}
+
+.is-closed {
+  display: none;
+}

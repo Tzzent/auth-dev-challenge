@@ -1,0 +1,46 @@
+@use "../utilities/_variables.scss" as var;
+
+.home-container {
+  max-width: 70em;
+  margin: auto;
+
+  .box {
+    width: 100%;
+  }
+
+  .head-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+  }
+
+  .item {
+    @extend .head-box;
+    justify-content: start;
+    border-bottom: 1px solid var.$light-color;
+
+    @media screen and (min-width: 750px) {
+      border-top: 1px solid var.$light-color;
+      border-bottom: none;
+    }
+
+    & .label {
+      text-transform: uppercase;
+      width: 20em;
+      color: var.$light-color;
+    }
+
+    & div {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+
+      @media screen and (min-width: 750px) {
+        justify-content: start;
+      }
+    }
+  }
+}
